@@ -1,0 +1,63 @@
+.heading{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 40px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+  
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: white;
+}
+
+.col-sm-4 {
+    text-align: center; 
+    padding: 90px;
+}
+
+.imageLock {
+    width: 200px; 
+    height: auto; 
+    background-image: url("images/lock-icon-29072.png"); 
+    background-size: cover; 
+    transition: background-image 0.3s; 
+}
+
+
+.imageFeed{
+    width: 200px; 
+    height: auto; 
+    background-image: url("images/leaf-png-38610.png"); 
+    background-size: cover; 
+}
+
+.imageSprinkler{
+    width: 200px; 
+    height: auto; 
+    background-image: url("images/pngwing.com.png"); 
+    background-size: cover; 
+}
+
+.container {
+    text-align: center; 
+    align-content: space-evenly;
+    height: 100%;
+    padding: 20px 20px;
+    border-radius: 65px; 
+}
+
+.homeSection{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    background-position: center; 
+}
+
+
