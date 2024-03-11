@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/stylesheetSprinkler.css" > 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/jsSprinkler.js"></script>
+</head>
+
+<body>
+<section>
+  <nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="lock.html">  Lock System </a> </li>
+            <li> <a href="feeding.html"> Feeding System </a> </li>
+            <li> <a href="sprinkler.html"> Sprinkler System </a> </li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+</section>
+
+  <section class="SprinklerSection"> 
+  <div class="heading">
+      <h1>SPRINKLER SYSTEM</h1>
+      <p>Turn on/off the sprinkler in the respective zones for the animals. </p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-3">
+        <img src="images/Zone1.png" class="zone1" id="sprinkleZone1">
+        <h3>ZONE 1</h3>
+        <p>         </p> <br>
+       
+            <label for="timer"> Set the timer: </label>
+
+             <select name="timeStamps" id="timeStamps"> 
+              <option value="10 minutes">10 minutes(default)</option> 
+              <option value="30 minutes">30 minutes</option> 
+              <option value="50 minutes">50 minutes</option> 
+             </select>
+
+             <br><br>
+          
+             <label for="repeat"> Repeat :</label>
+             <select name="repeatStamps" id="repeatStamps"> 
+              <option value="6 times per day">6 times per day(default)</option> 
+              <option value="3 times per day">3 times per day</option> 
+              <option value="2 times per day">2 times per day</option> 
+              <option value="only once">only once</option> 
+          </select>
+          <br><br> 
+
+          <label for="lastTime"> Last Activated :</label>
+          <span id="lastActivated">N/A</span>
+          <br><br>
+          <!-- <label for=""> mm/dd/yy/ time </label>  -->
+          <button onclick="zoneChange1()" class="penButton" id="zonebuttontext1">Start </button>
+          <br><br>
+          <div id="timerDisplay"></div>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/Zone2.png" class="zone2" id="sprinkleZone2">
+        <h3>ZONE 2</h3>
+        <p>         </p> <br>
+      
+             <!-- <p>Please set the timer for the Sprinkler </p> -->
+             <label for="timer"> Set the timer: </label>
+
+             <select name="timeStamps" id="timeStamps2"> 
+              <option value="10 minutes">10 minutes(default)</option> 
+              <option value="30 minutes">30 minutes</option> 
+              <option value="50 minutes">50 minutes</option> 
+             </select>
+
+             <br><br>
+          
+             <label for="repeat"> Repeat :</label>
+             <select name="repeatStamps" id="repeatStamps"> 
+              <option value="6 times per day">6 times per day(default)</option> 
+              <option value="3 times per day">3 times per day</option> 
+              <option value="2 times per day">2 times per day</option> 
+              <option value="only once">only once</option> 
+          </select>
+          <br><br> 
+
+          <label for = "lastTime2"> Last Activated :</label>
+          <span id = "lastActivated2">N/A</span> <br><br>
+          <button onclick = "zoneChange2()" class="penButton" id="zonebuttontext2">Start </button>
+          <br><br>
+          <div id = "timerDisplay2"></div>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/Zone3.png" class="zone3" id="sprinkleZone3">
+        <h3>ZONE 3</h3>        
+        <p>         </p> <br>
+         
+             <!-- <p>Please set the timer for the Sprinkler </p> -->
+             <label for="timer"> Set the timer: </label>
+
+             <select name="timeStamps" id="timeStamps3"> 
+              <option value="10 minutes">10 minutes(default)</option> 
+              <option value="30 minutes">30 minutes</option> 
+              <option value="50 minutes">50 minutes</option> 
+             </select>
+
+             <!-- <input type="text" value="00:20:00 (default)" id="timer">  -->
+             <br><br>
+          
+             <label for="repeat"> Repeat :</label>
+             <select name="repeatStamps" id="repeatStamps"> 
+              <option value="6 times per day">6 times per day(default)</option> 
+              <option value="3 times per day">3 times per day</option> 
+              <option value="2 times per day">2 times per day</option> 
+              <option value="only once">only once</option> 
+          </select>
+          <br><br> 
+
+          <label for="lastTime3"> Last Activated :</label>
+          <span id = "lastActivated3">N/A</span>  <br><br>
+          <button onclick="zoneChange3()" class="penButton" id="zonebuttontext3">Start </button>
+          <br><br>
+          <div id = "timerDisplay3"></div>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/AllZone.png" class="zone4" id="sprinkleZone4">  
+        <h3>All Zones</h3>
+        <p>         </p> <br>
+             <!-- <p>Please set the timer for the Sprinkler </p> -->
+             <label for="timer"> Set the timer: </label>
+
+             <select name="timeStamps" id="timeStamps4"> 
+              <option value="10 minutes">10 minutes(default)</option> 
+              <option value="30 minutes">30 minutes</option> 
+              <option value="50 minutes">50 minutes</option> 
+             </select>
+             
+             <br><br>
+          
+             <label for="repeat"> Repeat :</label>
+             <select name="repeatStamps" id="repeatStamps"> 
+              <option value="6 times per day">6 times per day(default)</option> 
+              <option value="3 times per day">3 times per day</option> 
+              <option value="2 times per day">2 times per day</option> 
+              <option value="only once">only once</option> 
+          </select>
+          <br><br> 
+
+          <label for="lastTime4"> Last Activated :</label>
+          <span id = "lastActivated4">N/A</span>  <br><br>
+          <button onclick="zoneChange4()" class="penButton" id="zonebuttontext4">Start </button>
+          <br><br>
+          <div id = "timerDisplay4"></div>
+      </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

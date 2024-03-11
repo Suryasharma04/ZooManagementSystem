@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style/stylesheetLock.css" >
+    <link rel="stylesheet" href="style/stylesheetFeeding.css" >  
+    <script src="js/jsFeeding.js"></script>
+
+</head>
+<body>
+<section>
+  <nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="lock.html"> Lock System </a> </li>
+            <li> <a href="feeding.html"> Feeding System </a> </li>
+            <li> <a href="sprinkler.html"> Sprinkler System </a> </li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+</section>
+
+<section class="FeedingSection"> 
+  <div class="heading">
+      <h1>FEEDING SYSTEM</h1>
+      <p>Feed the animals of the Zoo routinely. Please set the appropriate settings to feed the animal below </p>
+  </div>
+    
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-3">
+        <img src="images/T1.png" class="animal1" >
+        <h3>TIGER</h3>
+        <p>         </p> <br>
+       <br>
+            <label for="timer"> Feeding Interval: </label>
+
+            <select name="timeStamps" id="timeStamps"> 
+              <option value="10 minutes">2 Hour(default)</option> 
+              <option value="20 minutes">4 Hour</option> 
+              <option value="40 minutes">6 Hour</option> 
+              <option value="1 hour">8 Hour</option> 
+          </select>
+
+             <br><br>
+          
+          <label for="lastTime"> Last Fed:</label>
+          <span id = "lastActivated">N/A</span> <br><br> 
+          <button onclick="animal1()" class="penButton" id="zonebuttontext1">Feed </button>
+          <br><br>
+          <p class ="feedMessage" id="feedMessage1"></p>
+          </div>
+
+      <div class="col-sm-3">
+        <img src="images/G1.png" class="animal2">
+        <h3>GIRAFFE</h3>
+        <p>         </p> <br>
+             <br>
+              <label for="timer"> Feeding Interval: </label>
+
+             <select name="timeStamps" id="timeStamps2"> 
+              <option value="10 minutes">2 Hour(default)</option> 
+              <option value="20 minutes">4 Hour</option> 
+              <option value="40 minutes">6 Hour</option> 
+              <option value="1 hour">8 Hour</option> 
+          </select>
+
+          <br><br>
+          
+
+          <label for="lastTime"> Last Fed:</label>
+          <span id = "lastActivated2">N/A</span> <br><br> 
+          <button onclick="animal2()" class="penButton" id="zonebuttontext2">Feed </button>
+          <br><br>
+          <p class ="feedMessage" id="feedMessage2"></p>
+        </div>
+
+      <div class="col-sm-3">
+        <img src="images/Z1.png" class="animal3">
+       
+        <h3>ZEBRA</h3>        
+        <p>         </p> <br>
+        <br>
+             <label for="timer"> Feeding Interval: </label>
+             <select name="timeStamps" id="timeStamps3"> 
+              <option value="10 minutes">2 Hour(default)</option> 
+              <option value="20 minutes">4 Hour</option> 
+              <option value="40 minutes">6 Hour</option> 
+              <option value="1 hour">8 Hour</option> 
+          </select>
+
+          <br><br>
+          
+
+          <label for="lastTime"> Last Fed:</label>
+          <span id = "lastActivated3">N/A</span> <br><br> 
+          <button onclick="animal3()" class="penButton" id="zonebuttontext3">Feed </button>
+          <br><br>
+          <p class ="feedMessage" id="feedMessage3"></p>
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/P1.png" class="animal4" >
+        <h3>PANDA</h3>        
+        <p>         </p> <br>
+        <br>
+             <label for="timer"> Feeding Interval: </label>
+
+             <select name="timeStamps" id="timeStamps4"> 
+              <option value="10 minutes">2 Hour(default)</option> 
+              <option value="20 minutes">4 Hour</option> 
+              <option value="40 minutes">6 Hour</option> 
+              <option value="1 hour">8 Hour</option> 
+          </select>
+
+          <br><br>
+
+          <label for="lastTime"> Last Fed: </label>
+          <span id = "lastActivated4">N/A</span> <br><br> 
+          <button onclick="animal4()" class="penButton" id="zonebuttontext4">Feed </button>
+          <br><br>
+          <p class ="feedMessage" id="feedMessage4"></p>
+         </div>
+      </div>
+    </div>
+</section>
+</body>
+</html>

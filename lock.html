@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/stylesheetLock.css" > 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="js/jsLock.js"></script>
+
+</head>
+<body>
+    <nav>
+        <div class="nav-links" id="navLinks">    
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="lock.html"> Lock System </a> </li>
+                <li> <a href="feeding.html"> Feeding System </a> </li>
+                <li> <a href="sprinkler.html"> Sprinkler System </a> </li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+<section class="lockSection"> 
+<div class="heading">
+    <h1>LOCK SYSTEM</h1>
+    <p>Lock/Unlock the animals in the Zoo. </p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="images/T1.png" class="animal1" >
+        <h3 class="lockH">Tiger</h3>
+        <p>
+          <button onclick="change1()" class="penButton" id="buttontext1">Lock</button>
+        </p> <br>
+        <h5 class="statusText" id="status1"></h5> 
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/G1.png" class="animal2">
+        <h3 class="lockH">Giraffe</h3>
+        <p>
+          <button onclick="change2()" class="penButton" id="buttontext2">Lock</button>
+            </p> <br>
+            <h5 class="statusText" id="status2"></h5> 
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/Z1.png" class="animal3">
+        <h3 class="lockH">Zebra</h3>        
+        <p>
+          <button onclick="change3()" class="penButton" id="buttontext3">Lock</button>
+            </p><br>
+            <h5 class="statusText" id="status3"></h5> 
+      </div>
+
+      <div class="col-sm-3">
+        <img src="images/masterLock.png" class="animal4" >
+        <h3 class="lockH">Master Lock</h3>        
+        <p>
+          <button onclick="change4()" class="penButton" id="buttontext4">Lock</button>
+            </p><br>
+            <h5 class="statusText" id="status4"></h5> 
+      </div>
+      
+    </div>
+  </div>
+</section>
+    
+</body>
+</html>
